@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run-script build"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "firebase": "^9.20.0",
     "firebase-admin": "^11.6.0",
     "http": "^0.0.1-security",
     "mqtt": "^4.3.7",
@@ -24,3 +26,5 @@
     "socket.io": "^4.6.1"
   }
 }
+
+
