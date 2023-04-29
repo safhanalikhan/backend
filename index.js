@@ -84,12 +84,14 @@ var client = mqtt.connect("broker.hivemq.com",options);
 // setup the callbacks
 client.on('connect', function () {
     console.log('Connected');
-    // var mqtopic1 = client.subscribe('1387/Statistics');
-    var mqtopic2 = client.subscribe('1410/Statistics');
-    // var mqtopic2 = client.subscribe('1400/Statistics');
-    var mqtopic1 = client.subscribe('MQTT1');
+    var mqtopic1 = client.subscribe('1387/Statistics');
+    // var mqtopic2 = client.subscribe('1410/Statistics');
+    var mqtopic2 = client.subscribe('1400/Statistics');
+    var mqtopic3 = client.subscribe('1199/Statistics');
+    // var mqtopic1 = client.subscribe('MQTT1');
     // console.log('testtopic ==========>>>>' , mqtopic1)
     // console.log('testtopic ==========>>>>' , mqtopic2)
+    // console.log('testtopic ==========>>>>' , mqtopic3)
 });
 client.on('close', function () {
     console.log('Disconnected')
